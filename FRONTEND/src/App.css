@@ -1,0 +1,214 @@
+.content {
+  text-align: center;
+  /* background-color: lightblue; */
+}
+
+* {  
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: linear-gradient(180deg, #E3ECFF, #FFFFFF);
+  ; /* Background set to black */
+  margin: 0;
+  padding: 0;
+  color: black; /* Updated text color for readability */
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container spans the full viewport and is transparent */
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 25px;
+  background: transparent; /* Removed white background */
+  margin: 0;
+  text-align: center;
+  flex: 1; /* This ensures the main content pushes the footer down */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header {
+  background: linear-gradient(90deg, #003092 0%, #A9B5DF 100%);
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #6a11cb;
+  padding-bottom: 6px;
+}
+
+.form-container {
+  background: #f9f9f9;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 80%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+button {
+  padding: 14px;
+  background: linear-gradient(90deg, #003092  0%, #A9B5DF 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+  width: 80%;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  transform: scale(1.05);
+}
+
+/* Navigation bar for Sign In, Sign Up, Dashboard, Auction */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  padding: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #666;
+  background: #003092; /* Adjust as needed */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: auto;
+  bottom: 0;
+  left: 0;
+  margin-top: auto; 
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+li {
+  background: white;
+  margin: 10px auto;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 80%;
+  text-align: center;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.message {
+  color: #d9534f; /* Bootstrap danger color */
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 18px;
+    width: 100vw;
+  }
+
+  header {
+    padding: 12px 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  .div1{
+    color: blue;
+  }
+
+  input,
+  textarea,
+  button,
+  li {
+    width: 100%;
+  }
+}
